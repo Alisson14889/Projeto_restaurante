@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <style>
+        body {
+            background-image: url(hamburger-4103070_1280.jpg);
+            font-family: Arial, sans-serif;
+            background-size: cover;
+	        background-position: top center;
+	        position: relative;
+	        z-index: 1;
+            
+	        object-fit: cover;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #166d1df0;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+        }
+        nav {
+            font-family: 'Times New Roman', Times, serif ;
+            display: flex;
+            justify-content: center;
+            background-color: #350b27e7;
+            padding: 0.5rem;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 1rem;
+        }
+        .container {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 30px;
+            
+            background-color: #97957e9a;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        
+            
+        }
+        input[type="text"], input[type="email"], input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            background-color: #ccc;
+        
+        }
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #cdade7;
+            color: #0c0101;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+           
+        }
+        input[type="submit"]:hover {
+            background-color: #cdade7;
+        }
+    </style>
+</head>
+<header>
+    <h1> <i>Restaurante 𝐹𝐸𝒫𝒜𝑀</i></h1>
+</header>
+<nav>
+    <a href="inicio2.html">Início</a>
+    <a href="cardapio.html">Cardápio</a>
+    <a href="cadastro1.html">Cadastro</a>
+    <a href="login1.html">Login</a>
+</nav>
+<body>
+    <div class="container">
+        <h1>Cadastro</h1>
+        <form action="cadastro.php" method="post">
+            <input type="text" name="nome" placeholder="Nome completo" required/>
+            <input type="email" name="login" id="login" placeholder="E-mail" required/>
+            <input type="password" name="senha" placeholder="Senha" required/>
+            <input type="text" name="phone" id="phone" placeholder="Telefone"/>
+            <input type="submit" value="Cadastrar">
+        </form>
+    </div>
+</body>
+</html>

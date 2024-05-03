@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="stylesheet" href="inicio.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cardápio FEPAM</title>
+    <style>
+        /* Estilos CSS para o seu site */
+        body {
+            background-image: url(hamburger-4103070_1280.jpg);
+            font-family: Arial, sans-serif;
+            background-size: cover;
+	        background-position: top center;
+	        position: relative;
+	        z-index: 1;
+            
+	        object-fit: cover;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #166d1df0;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+        }
+        nav {
+            font-family: 'Times New Roman', Times, serif ;
+            display: flex;
+            justify-content: center;
+            background-color: #350b27e7;
+            padding: 0.5rem;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 1rem;
+        }
+        .cardapio {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        } ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        img {
+            align-items: center;
+            width: 100px;
+            height: 100px;
+            margin-right: 20px;
+            object-fit: cover;
+        }
+        .prato-nome {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .prato-preco {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 10px;
+            margin-left: auto;
+        }
+        
+    
+    </style>
+</head>
+<body>
+    <header>
+        <h1> <i>Restaurante 𝐹𝐸𝒫𝒜𝑀</i></h1>
+    </header>
+    <nav>
+        <a href="inicio2.html">Início</a>
+        <a href="cardapio.html">Cardápio</a>
+        <a href="cadastro1.html">Cadastro</a>
+        <a href="login1.html">Login</a>
+    </nav>
+    
+    <div class="cardapio">
+        <form action="dados.php" method="post">
+        <h2>Cardápio</h2>
+        <ul>
+            <li>
+                <img src="pizza-3000274_640.jpg" alt="Pizza Muçarela ">
+                <div class="prato-info">
+                    <label for="Mussarela">Pizza de Muçarela</label>
+                    <span class="prato-preco">R$ 35,00</span>
+                    <input type="checkbox" name="comida[]" id="Mussarela" value="Pizza de Mussarela"></br>
+                    <legend>Quantidade
+                        <input type="number" name="quant[]" id="quant">
+                    </legend>
+                    
+                </div>
+            </li>
+            <li>
+                <img src="pizza-5179939_640.jpg" alt="Pizza Portuguesa">
+                <div class="prato-info">
+                    <label for="Portuguesa">Pizza Portuguesa</label>
+                    <span class="prato-preco">R$ 35,00</span>
+                    <input type="checkbox" name="comida[]" id="Portuguesa" value="Pizza Portuguesa">
+        
+                    <legend>Quantidade
+                        <input type="number" name="quant[]" id="quant">
+                     </legend>
+                </div>
+            </li>
+            <li>
+                <img src="food-5987888_640.jpg" alt="Lasanha">
+                <div class="lasanha">
+                    <label for="Lasanha">Lasanha</label>
+                    <span class="prato-preco">R$ 54,99</span>
+                    <input type="checkbox" name="comida[]" id="Lasanha" value="Lasanha">
+                    <legend>Quantidade
+                        <input type="number" name="quant[]" id="quant">
+                    </legend>
+                </div>
+            </li>
+            <li>
+                <img src="burger-4953465_640.jpg" alt="Hambúrguer">
+                <div class="prato-info">
+                    <label for="Hamburguer">Hambúrguer</label>
+                    <span class="prato-preco">R$ 22,00</span>
+                    <input type="checkbox" name="comida[]" id="Hamburguer" value="Hamburguer">
+            
+                    <legend>Quantidade
+                         <input type="number" name="quant[]" id="quant">
+                    </legend>
+
+                </div>
+            </li>
+            <h2>Bebidas</h2>
+            <li>
+                <img src="coca-cola-2160843_640.jpg" alt="Coca-cola">
+                <div class="prato-info">
+
+                    <label for="Coca">Coca Cola</label>
+                    <span class="prato-preco">R$ 12,00</span>
+                    <input type="checkbox" name="bebe[]" id="Coca" value="Coca Cola">
+
+                    <legend>Quantidade
+                        <input type="number" name="quant[]" id="quant">
+                    </legend>
+                </div>
+            </li>
+            <li>
+                <img src="fantauva.jpeg" alt="Fanta Uva">
+                <div class="prato-info">
+                    <label for="Fantauva">Fanta Uva</label>
+                    <span class="prato-preco">R$ 5,00</span>
+                    <input type="checkbox" name="bebe[]" id="Fantauva" value="Fanta Uva">
+                    <legend>Quantidade
+                        <input type="number" name="quant[]" id="quant">
+                     </legend>
+
+                </div>
+            </li>
+            <li>
+                <img src="fantalaranja.jpeg" alt="Fanta Laranja">
+                <div class="prato-info">
+                    <label for="Fantalaranja">Fanta Laranja</label>
+                    <span class="prato-preco">R$ 5,00</span>
+                    <input type="checkbox" name="bebe[]" id="Fantalaranja" value="Fanta Laranja">
+           
+                    <legend>Quantidade
+                        <input type="number" name="quant[]" id="quant">
+                    </legend>
+
+                </div>
+            </li>
+            <li>
+                <img src="guava-2420422_640.jpg" alt="Suco de goiaba">
+                <div class="prato-info">
+                    <label for="goiaba">Suco de Goiaba</label>
+                    <span class="prato-preco">R$ 8,00</span>
+                    <input type="checkbox" name="bebe[]" id="goiaba" value="Suco de Goiaba">
+        
+                    <legend>Quantidade
+                        <input type="number" name="quant[]" id="quant">
+                    </legend>
+
+                </div>
+            </li>
+            <li>
+                <img src="water-5501652_640.jpg" alt="Agua mineral">
+                <div class="prato-info">
+                    <label for="agua">Água</label>
+                    <span class="prato-preco">R$ 3,00</span>
+                    <input type="checkbox" name="bebe[]" id="agua" value="Água">
+         
+                    <legend>Quantidade
+                        <input type="number" name="quant[]" id="quant">
+                    </legend>
+                </div>
+            </li>
+            <button type="submit">Fazer Pedido</button>
+
+        </form>
+    </div>
+</body>
+</html>

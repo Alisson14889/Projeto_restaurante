@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        body {
+            background-image: url(hamburger-4103070_1280.jpg);
+            font-family: Arial, sans-serif;
+            background-size: cover;
+	        background-position: top center;
+	        position: relative;
+	        z-index: 1;
+            
+	        object-fit: cover;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #166d1df0;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+        }
+        nav {
+            font-family: 'Times New Roman', Times, serif ;
+            display: flex;
+            justify-content: center;
+            background-color: #350b27e7;
+            padding: 0.5rem;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 1rem;
+        }
+        .container-fluid {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 30px;
+            
+            background-color: #97957e9a;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        
+            
+        }
+        
+        
+        
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #cdade7;
+            color: #0c0101;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+           
+        }
+        .form-input{
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            background-color: #ccc;
+
+        }
+        input[type="submit"]:hover {
+            background-color: #cdade7;
+        }
+    </style>
+</head>
+<header>
+    <h1> <i>Restaurante 𝐹𝐸𝒫𝒜𝑀</i></h1>
+</header>
+<nav>
+    <a href="inicio2.html">Início</a>
+    <a href="cardapio.html">Cardápio</a>
+    <a href="cadastro1.html">Cadastro</a>
+    <a href="login1.html">login</a>
+</nav>
+<body>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-lg-6 col-md-6 form-container">
+				<div class="col-lg-8 col-md-12 col-sm-9 col-xs-12 form-box text-center">
+
+					<div class="cabeçalho mb-3">
+						<h4>Faça login em sua conta</h4>
+					</div>
+
+					<form action="login.php" method="POST">
+						<div class="form-input">
+							<span><i class="fa fa-envelope"></i></span>
+							<input type="login" name="login" placeholder="Endereço de E-mail
+							" required>
+						</div>
+						<div class="form-input">
+							<span><i class="fa fa-lock"></i></span>
+							<input type="password" name="senha" placeholder="Senha" required>
+						</div>
+						<div class="row mb-3">
+							<div class="col-6 d-flex">
+								<div class="custom-control custom-checkbox">
+									<input type="checkbox" class="custom-control-input" id="cb1">
+									<label class="custom-control-label text-white" for="cb1">Lembrar me</label>
+								</div>
+							</div>
+							<div class="col-6 text-right">
+								<a href="redefinir senha.html" class="redefinir-link">Esqueceu a senha?</a>
+							</div>
+						</div>
+						<div class="text-left mb-3">
+							<button type="submit" name="submit" class="btn">Login</button>
+						</div>
+						
+						
+						<div class="text-white">Não tem uma conta?
+							<a href="cadastro1.html" class="registro-link">Registre-se aqui</a>
+						</div>
+					</form>
+
+				</div>
+			</div>
+
+			<div class="col-lg-6 col-md-6 d-none d-md-block image-container"></div>
+		</div>
+	</div>
+</body>
+</html>
+    
+</body>
+</html>
